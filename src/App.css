@@ -1,38 +1,113 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.chat-img {
+  max-width: 15%;
+  /* border radius  */
+  border-radius: 50%;
+
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-search {
+  width: 100%;
+  max-width: 300px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.btn-search {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background-color: #0056b3;
+}
+
+.alert {
+  display: none;
+}
+
+.ans {
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 300px !important;
+}
+
+textarea{
+  width: 120% !important;
+  /* min height */
+  min-height: 350px !important;
+  
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #7e1616;
+  border-radius: 5px;
+  /* center textare */
+  margin-left: 2em;
+
+  background-color: #ffffff !important;
+  color: #7e1616 !important;
+  /* make text bolder and change font */
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+textarea.form-control {
+  
+}
+
+footer {
+  
+  bottom: 0;
+  color : #ffffff;
+  padding: 10px;
+  width: 100%;
+  /* background color vermillion */
+  background-color: #841e1a;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+button {
+  /* putt button next to the question */
+  
+  background-color: #7e1616 !important;
+  width: 20%;
+  color: #ffffff;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
 }
